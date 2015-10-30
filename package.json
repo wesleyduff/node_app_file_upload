@@ -1,7 +1,12 @@
 {
-  "name": "workspace",
+  "name": "Node.js and Express.js File Uploader",
+  "author" : "Wes Duff <speuides@wesduff.com> (http://wesduff.com)",
   "version": "0.0.0",
   "private": true,
+  "homepage" : "wesduff.com",
+  "keywords" : ["file upload", "express", "node"],
+  "license" : "MIT",
+  "description" : "Demo of a file uploader",
   "scripts": {
     "start": "node ./bin/www"
   },
