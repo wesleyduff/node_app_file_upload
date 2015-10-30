@@ -1,0 +1,17 @@
+header {
+    margin-bottom:30px;
+}
+
+input[type="file"] {
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border-bottom:1px solid #4D4D4D;
+}
+
+lable, input[type="file"] {
+    display:inline;
+}
+
+input[type="submit"]{
+    width:100%;
+}

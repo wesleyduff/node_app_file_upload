@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<div class="row">
+    <form 
+        id="uploadForm" 
+        enctype="multipart/form-data" 
+        action="/api/photo" 
+        method="post"
+        class="col-xs-12 col-sm-offset-4 col-sm-4">
+            <label>File : </label>
+            <input type="file" name="avatar" />
+            <br/>
+        <input 
+            type="submit"
+            value="Upload Image"
+            name="submit"
+            class="btn btn-primary"
+        />
+    </form>
+    {% if imagepath %}
+    <div class="rpw">
+        <div class="col-xs-12">
+            <img src="/images/uploads/{{imagepath}}" />
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
