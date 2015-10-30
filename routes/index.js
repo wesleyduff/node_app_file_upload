@@ -1,9 +1,8 @@
 var express             =   require('express');
 var router              =   express.Router();
 var multer              =   require('multer');
-var upload              =   multer({ dest: 'uploads/'}).single('avatar');
-var fs = require('fs');
-var path = require('path');
+var upload              =   multer({ dest: 'uploads/'}).single('product');
+var fs                  =   require('fs');
 
 
 /* GET home page. */
@@ -26,12 +25,15 @@ router.post('/api/photo', function(req, res){
             if(err){
                 res.send('failed mvoing file but uploaded');
             }
+            
+            //delete the old temp file
             fs.unlink(req.file.path, function(err){
                 if(err) {
                     console.log('ERROR DELETING ------------ ');
                     console.log(err);
                 }
             });
+            
             res.render('index', {
                 imagepath : req.file.originalname
             });

@@ -5,3 +5,6 @@ dist
 bower_components
 uploads
 npm-debug.log
+
+/* Dont want to load images from testing */
+puclic/images/uploads/*
