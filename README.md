@@ -1,18 +1,35 @@
+# Node JS : Express.js : Swig.js - File Uploader : Demo
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This code is an example of using these Node frameworks along with some middleware to get a file uploaded to your server and display that image on the server.
+
+### Version
+1.0.0
+
+### Tech
+
+File Uploaded uses a number of open source projects to work properly:
+
+* express.js
+* swig.js
+* fs.js (part of node.js) // for file processing
+
+### Installation for Demo:
+
+You will need to clone the repo
+Once cloned you can then run
+```sh
+$ npm install
+```
+
+```sh
+$ npm start
+```
+
+License
+----
+
+MIT
 
 
-Hi there! Welcome to Cloud9 IDE!
+**Free Software, Hell Yeah!**
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
